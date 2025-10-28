@@ -1,0 +1,33 @@
+[
+  {
+    "name": "EICAR-Test",
+    "type": "TEST",
+    "patternType": "HASH",
+    "pattern": "MD5:44d88612fea8a8f36de82e1278abb02f",
+    "description": "EICAR standard test file (MD5)"
+  },
+  {
+    "name": "Synthetic-Hello-File",
+    "type": "TEST",
+    "patternType": "HASH",
+    "pattern": "MD5:5eb63bbbe01eeed093cb22bb8f5acdc3",
+    "description": "MD5 of file with content 'hello world'"
+  },
+  {
+    "name": "Synthetic-Prefix-DeadBeef",
+    "type": "SYNTHETIC",
+    "patternType": "PREFIX",
+    "prefix": "deadbeef",
+    "signatureLength": 16,
+    "description": "Synthetic prefix pattern for demo"
+  },
+  {
+    "name": "Synthetic-Substring-Script",
+    "type": "SCRIPT",
+    "patternType": "SUBSTRING",
+    "pattern": "eval(base64_decode",
+    "offsetBegin": 0,
+    "offsetEnd": 65536,
+    "description": "Synthetic substring pattern for demo script"
+  }
+]

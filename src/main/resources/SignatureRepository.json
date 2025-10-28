@@ -1,0 +1,33 @@
+[
+  {
+    "name": "EICAR-Test",
+    "type": "TEST",
+    "patternType": "HASH",
+    "pattern": "SHA256:PUT_SHA256_OF_EICAR_HERE",
+    "description": "EICAR test file"
+  },
+  {
+    "name": "Test-File-hello",
+    "type": "TEST",
+    "patternType": "HASH",
+    "pattern": "SHA256:PUT_SHA256_OF_testfile.txt_HERE",
+    "description": "Hash of simple text file 'hello antivirus'"
+  },
+  {
+    "name": "Synthetic-Pattern-1",
+    "type": "SYNTHETIC",
+    "patternType": "PREFIX",
+    "prefix": "deadbeef",
+    "signatureLength": 16,
+    "description": "Synthetic prefix for demo"
+  },
+  {
+    "name": "Fake.Script.Signature",
+    "type": "SCRIPT",
+    "patternType": "SUBSTRING",
+    "pattern": "eval(base64_decode",
+    "offsetBegin": 0,
+    "offsetEnd": 65536,
+    "description": "Demo script substring for scanning"
+  }
+]
